@@ -10,31 +10,38 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.ccs"/>
+    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="live.js"></script>
     <title>Frontend Mentor | Notifications page</title>
   </head>
   <body>
-    <div>
+    <div class="main-css">
       <div>
-        <div class="Notifications">
-          <h1>Notifications</h1>
-          <p>3</p>
+        <div class="notifications">
+          <h1 class="notification-heading">
+            Notifications<span class="notifications-span">3</span>
+          </h1>
+          <p class="notifications-para">Mark all as read</p>
         </div>
-        <h1>Mark all as read</h1>
       </div>
-      <div>
-        <p>
-          <span>Mark Webber</span>reacted to your recent post
-          <span>My first tournament today!</span>
-        </p>
-        <p>1m ago</p>
+      <div class="active-chat-cont">
+        <div><img src="assets/images/avatar-mark-webber.webp" size:3px;/></div>
+        <div class="para-cont">
+          <p class="avatar-para">
+            <span class="avatar-name">Mark Webber </span>reacted to your recent post
+            <span class="avatar-para-extended">My first tournament today!</span>
+          </p>
+          <p class='avatar-para'>1m ago</p>
+        </div>
       </div>
-      <div>
-        <p>Angela Gray followed you</p>
-        <p>5m ago</p>
+      <div class="active-chat-cont">
+        <div><img src="assets/images/avatar-angela-gray.webp"/></div>
+        <div class="para-cont">
+          <p class="avatar-name">Angela Gray <span class="avatar-para">followed you</span></p>
+          <p class="avatar-para">5m ago</p>
+        </div>
       </div>
-      <div>
+      <div class="active-chat-cont">
         <p>Jacob Thompson has joined your group Chess Club</p>
         <p>1 day ago</p>
       </div>
