@@ -77,3 +77,15 @@
     color:rgb(94, 92, 92);
     font-weight:bold;
 }
+
+.chat-cont{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    margin-top:8px;
+    padding:8px;
+}
+
+.personal-msg{
+    
+}
