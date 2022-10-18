@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <script src="https://kit.fontawesome.com/963219ca5f.js" crossorigin="anonymous"></script>
     <link
       rel="icon"
       type="image/png"
@@ -11,7 +12,6 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="live.js"></script>
     <title>Frontend Mentor | Notifications page</title>
   </head>
   <body>
@@ -19,37 +19,37 @@
       <div>
         <div class="notifications">
           <h1 class="notification-heading">
-            Notifications<span class="notifications-span">3</span>
+            Notifications<span class="notifications-span" id="count">3</span>
           </h1>
-          <p class="notifications-para">Mark all as read</p>
+          <button class="notifications-para" id="readAll">Mark all as read</button>
         </div>
       </div>
-      <div class="active-chat-cont">
+      <div class="active-chat-cont" id="firstAct">
         <div><img src="assets/images/avatar-mark-webber.webp" size:3px; /></div>
         <div class="para-cont">
           <p class="avatar-para">
             <span class="avatar-name">Mark Webber </span>reacted to your recent
-            post
-            <span class="avatar-para-extended">My first tournament today!</span>
+            post 
+            <span class="avatar-para-extended">My first tournament today!<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 13px; width: 16px; margin-left:12px;" id="svgItem"><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-160c-53 0-96-43-96-96s43-96 96-96s96 43 96 96s-43 96-96 96z"/></svg></span>
           </p>
           <p class="avatar-para">1m ago</p>
         </div>
       </div>
-      <div class="active-chat-cont">
+      <div class="active-chat-cont" id="secondAct">
         <div><img src="assets/images/avatar-angela-gray.webp" /></div>
         <div class="para-cont">
           <p class="avatar-name">
-            Angela Gray <span class="avatar-para">followed you</span>
+            Angela Gray <span class="avatar-para">followed you <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 13px; width: 16px; margin-left:12px;" id="svgItem1"><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-160c-53 0-96-43-96-96s43-96 96-96s96 43 96 96s-43 96-96 96z"/></svg></span>
           </p>
           <p class="avatar-para">5m ago</p>
         </div>
       </div>
-      <div class="active-chat-cont">
+      <div class="active-chat-cont" id="thirdAct">
         <div><img src="assets/images/avatar-jacob-thompson.webp" /></div>
         <div class="para-cont">
           <p class="avatar-para">
             <span class="avatar-name">Jacob Thompson</span> has joined your
-            group <span class="chess-para">Chess Club</span>
+            group <span class="chess-para">Chess Club <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 13px; width: 16px; margin-left:12px;" id="svgItem2"><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-160c-53 0-96-43-96-96s43-96 96-96s96 43 96 96s-43 96-96 96z"/></svg></span>
           </p>
           <p class="avatar-para">1 day ago</p>
         </div>
@@ -116,5 +116,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script type="text/javascript" src="live.js"></script>
   </body>
 </html>
